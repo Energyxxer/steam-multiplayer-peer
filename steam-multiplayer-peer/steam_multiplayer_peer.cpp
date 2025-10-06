@@ -189,7 +189,6 @@ void SteamMultiplayerPeer::_disconnect_peer(int32_t p_peer, bool p_force) {
 }
 
 int32_t SteamMultiplayerPeer::_get_unique_id() const {
-	ERR_FAIL_COND_V_MSG(!_is_active(), 0, "The multiplayer instance isn't currently active.");
 	return unique_id;
 }
 
